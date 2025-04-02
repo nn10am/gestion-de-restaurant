@@ -4,7 +4,8 @@ venv/
 env/
 
 # Environment variables
-.env
+
+backend/.env
 # Byte-compiled / cache files
 __pycache__/
 *.pyc 
