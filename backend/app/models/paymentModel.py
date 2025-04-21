@@ -13,5 +13,5 @@ class Payment(Base):
     payment_status = Column(Enum(PaymentStatus), default=PaymentStatus.pending)
 
     # Relationship with Order
-    order_id = Column(Integer, ForeignKey("oreers.id"), nullable=False)
+    order_id = Column(Integer, ForeignKey("orders.id"), nullable=False)
     order = relationship("Order")
